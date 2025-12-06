@@ -70,12 +70,17 @@
             font-size: 14px;
             color: #6c757d;
         }
+        .note {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>XDC Peacock3: Post-Quantum Onchain Communication</h1>
+        <h1>XDC Peacock4: Post-Quantum Onchain Communication</h1>
         <p>Secure your messages on the XDC network with quantum-resistant encryption.</p>
     </header>
 
@@ -90,8 +95,9 @@
     <section id="send">
         <h2>2. Encrypt and Send Message</h2>
         <p>Enter the recipient's details, encrypt the message using their public key, and send it as transaction data on XDC.</p>
-        <label for="toAddr">To Address (xdc... or 0x...):</label>
-        <input id="toAddr" placeholder="e.g., xdc123... or 0x123...">
+        <label for="toAddr">To Address (xdc... or 0x..., optional):</label>
+        <input id="toAddr" placeholder="e.g., xdc123... or 0x123... (leave blank for data-only to null address)">
+        <p class="note">Leave blank to send to the null address (0x000...000) for pure data storage without transferring value to another account. This avoids errors when including data in transactions to regular accounts.</p>
 
         <label for="pubKey">Recipient's Public Key (hex):</label>
         <textarea id="pubKey" rows="4" placeholder="Paste public key here"></textarea>
@@ -200,7 +206,11 @@
             if (!provider) return alert('Connect wallet first');
             try {
                 let to = document.getElementById('toAddr').value.trim();
-                if (to.startsWith('xdc')) to = '0x' + to.slice(3);
+                if (to === '') {
+                    to = '0x0000000000000000000000000000000000000000';
+                } else if (to.startsWith('xdc')) {
+                    to = '0x' + to.slice(3);
+                }
                 const pubKeyHex = document.getElementById('pubKey').value.trim();
                 const pk = hexToArray(pubKeyHex);
                 const msg = document.getElementById('message').value;
