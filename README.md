@@ -1,4 +1,4 @@
-# XDC Peacock: P-QOC (Post-Quantum Onchain Communication)
+# XDC Peacock: Post-Quantum Onchain Communication (P-QOC)
 
 [![GitHub stars](https://img.shields.io/github/stars/s4njk4n/XDC_Peacock?style=social)](https://github.com/s4njk4n/XDC_Peacock/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/s4njk4n/XDC_Peacock?style=social)](https://github.com/s4njk4n/XDC_Peacock/network/members)
