@@ -12,7 +12,7 @@ Live demo: https://s4njk4n.github.io/XDC_Peacock/
 
 ## What it does
 
-XDC Peacock lets you generate post-quantum encryption keypairs, encrypt messages using a recipient's PQ encryption public key, and send them as data in XDC transactions. You can also use it to decrypt your received messages from transaction hashes using your PQ encryption private key. It's designed for secure, onchain communication that's resistant to quantum attacks.
+XDC Peacock lets you generate post-quantum (PQ) encryption keypairs, encrypt messages using a recipient's PQ encryption public key, and send them as data in XDC transactions. You can also use it to decrypt your received messages from transaction hashes using your PQ encryption private key. It's designed for secure, onchain communication that's resistant to quantum attacks.
 
 ## How it works
 
