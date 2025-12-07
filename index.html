@@ -178,7 +178,7 @@
                 <input id="toAddr" placeholder="e.g., xdc123... or 0x123... (leave blank for data-only to null address)" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm">
                 <p class="note">Leave blank to send to the null address (0x000...000) for pure data storage without transferring value to another account. This avoids errors when including data in transactions to regular accounts.</p>
 
-                <label for="pubKey" class="text-sm text-[#D4C2F0] mb-2 block">Recipient's Public Key (hex):</label>
+                <label for="pubKey" class="text-sm text-[#D4C2F0] mb-2 block">Recipient's Encryption Public Key (hex):</label>
                 <textarea id="pubKey" rows="4" placeholder="Paste public key here" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm"></textarea>
 
                 <label for="message" class="text-sm text-[#D4C2F0] mb-2 block">Message to Encrypt:</label>
@@ -204,7 +204,7 @@
                 <label for="txHashInput" class="text-sm text-[#D4C2F0] mb-2 block">Transaction Hash:</label>
                 <input id="txHashInput" placeholder="e.g., 0xabc..." class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm">
 
-                <label for="privKey" class="text-sm text-[#D4C2F0] mb-2 block">Your Private Key (hex):</label>
+                <label for="privKey" class="text-sm text-[#D4C2F0] mb-2 block">Your Encryption Private Key (hex):</label>
                 <textarea id="privKey" rows="4" placeholder="Paste private key here" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm"></textarea>
 
                 <label for="rpcDecrypt" class="text-sm text-[#D4C2F0] mb-2 block">RPC Endpoint:</label>
@@ -355,7 +355,7 @@
                             chainName: 'XDC Network',
                             rpcUrls: ['https://rpc.ankr.com/xdc'],
                             nativeCurrency: { name: 'XDC', symbol: 'XDC', decimals: 18 },
-                            blockExplorerUrls: ['https://explorer.xinfin.network']
+                            blockExplorerUrls: ['https://xdcscan.com/']
                         }]
                     });
                 }
