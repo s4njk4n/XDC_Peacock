@@ -1,8 +1,14 @@
 # XDC Peacock
 
+[![GitHub stars](https://img.shields.io/github/stars/s4njk4n/XDC_Peacock?style=social)](https://github.com/s4njk4n/XDC_Peacock/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/s4njk4n/XDC_Peacock?style=social)](https://github.com/s4njk4n/XDC_Peacock/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/s4njk4n/XDC_Peacock)](https://github.com/s4njk4n/XDC_Peacock/issues)
+
 Post-quantum encrypted messaging on the XDC blockchain. All encryption and decryption happens client-side. Uses ML-KEM-768 for key encapsulation and AES-256-GCM for message encryption. Messages are stored as transaction data onchain.
 
 Live demo: https://s4njk4n.github.io/XDC_Peacock/
+
+<img src="XDC_Peacock.jpg" alt="XDC Peacock Banner" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 
 ## What it does
 
