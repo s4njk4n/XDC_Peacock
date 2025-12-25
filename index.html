@@ -176,7 +176,7 @@
                 <p class="text-sm text-[#D4C2F0] mb-4">Enter details, encrypt the message, and send as transaction data on XDC.</p>
                 <label for="toAddr" class="text-sm text-[#D4C2F0] mb-2 block">To Address (xdc... or 0x..., optional):</label>
                 <input id="toAddr" placeholder="e.g., xdc123... or 0x123... (leave blank for null address, but may cause errors)" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm">
-                <p class="note">Note: Due to current MetaMask limitations, sending to the null address (0x000...000, by leaving the field blank) may not work reliably and could result in errors. Specifying a valid address is recommended. Additionally, MetaMask may restrict sending transactions with data to other addresses within the same wallet extension, so avoid using internal addresses for this purpose.</p>
+                <p class="note">Note: For best compatibility with MetaMask, we recommend specifying a valid address. The option to send to the null address (0x000...000, by leaving the field blank) is provided for pure data storage and is retained in anticipation of potential future MetaMask enhancements. Additionally, MetaMask may limit transactions with data to other addresses within the same wallet, so it's best to use external addresses for this feature.</p>
 
                 <label for="pubKey" class="text-sm text-[#D4C2F0] mb-2 block">Recipient's Encryption Public Key (hex):</label>
                 <textarea id="pubKey" rows="4" placeholder="Paste recipient's encryption public key here" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm"></textarea>
