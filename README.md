@@ -53,7 +53,6 @@ Note: Use MetaMask with XDC network added. If not, it prompts to add it.
 
 - Clone the repo: `git clone https://github.com/s4njk4n/XDC_Peacock.git`
 - Open `index.html` in a browser for local use.
-- For GitHub Pages: Push to repo and enable Pages in settings.
 
 Dependencies: None for runtime (CDNs for Tailwind, Font Awesome, Ethers.js). ML-KEM loaded from esm.sh.
 
