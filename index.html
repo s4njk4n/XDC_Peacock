@@ -175,7 +175,7 @@
                 <h2 class="text-2xl font-bold text-[#A3E4FF] mb-4">2. Encrypt and Send Message</h2>
                 <p class="text-sm text-[#D4C2F0] mb-4">Enter details, encrypt the message, and send as transaction data on XDC.</p>
                 <label for="toAddr" class="text-sm text-[#D4C2F0] mb-2 block">To Address (xdc... or 0x..., optional):</label>
-                <input id="toAddr" placeholder="e.g., xdc123... or 0x123... (leave blank for data-only to null address)" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm">
+                <input id="toAddr" placeholder="e.g., xdc123... or 0x123... (leave blank for null address, but may cause errors)" class="w-full p-3 mb-4 rounded-lg bg-[#2E2A6A] text-[#F3E8FF] border border-[#A3E4FF]/30 focus:outline-none max-sm:text-sm">
                 <p class="note">Note: Due to current MetaMask limitations, sending to the null address (0x000...000, by leaving the field blank) may not work reliably and could result in errors. Specifying a valid address is recommended. Additionally, MetaMask may restrict sending transactions with data to other addresses within the same wallet extension, so avoid using internal addresses for this purpose.</p>
 
                 <label for="pubKey" class="text-sm text-[#D4C2F0] mb-2 block">Recipient's Encryption Public Key (hex):</label>
